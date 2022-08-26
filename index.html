@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row justify-content-center vh-100 align-items-center">
+        <div class="col-12 col-lg-4">
+          <div class="card bg-warning p-1 p-lg-3 rounded-6" id="card1">
+            <div class="card-body p-4">
+              <div
+                class="bg-info bg-opacity-25 mb-4 rounded-circle text-center w-h-50"
+                style="line-height: 50px"
+                ;
+              >
+                <img
+                  src="./images/icon-star.svg"
+                  alt=""
+                  style="width: 15px; height: 15px"
+                />
+              </div>
+              <h2 class="text-white mb-4">How did we do?</h2>
+              <p class="text-white-50 fs-6">
+                Please let us know how we did with your support request. All
+                feedback is appreciated to help us improve our offering!
+              </p>
+              <div class="container">
+                <div class="row justify-content-between">
+                  <div class="col-2 p-0">
+                    <button
+                      class="btn border-0 btn-hover text-white rounded-circle bg-opacity-25 bg-info w-h-50"
+                    >
+                      1
+                    </button>
+                  </div>
+                  <div class="col-2 p-0">
+                    <button
+                      class="btn border-0 btn-hover text-white bg-opacity-25 bg-info rounded-circle w-h-50"
+                    >
+                      2
+                    </button>
+                  </div>
+                  <div class="col-2 p-0">
+                    <button
+                      class="btn border-0 btn-hover text-white bg-opacity-25 bg-info rounded-circle w-h-50"
+                    >
+                      3
+                    </button>
+                  </div>
+                  <div class="col-2 p-0">
+                    <button
+                      class="btn border-0 btn-hover text-white bg-opacity-25 bg-info rounded-circle w-h-50"
+                    >
+                      4
+                    </button>
+                  </div>
+                  <div class="col-2 p-0">
+                    <button
+                      class="btn border-0 btn-hover text-white bg-opacity-25 bg-info rounded-circle w-h-50"
+                    >
+                      5
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="btn btn-primary w-100 text-white text-uppercase mt-4 rounded-6 submit-btn border-0"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+          <div class="card bg-warning d-none p-1 p-lg-3 rounded-6" id="card2">
+            <div class="card-body p-4">
+              <div class="text-center">
+                <img src="./images/illustration-thank-you.svg" alt="" />
+              </div>
+              <div
+                class="fs-6 text-primary w-75 mx-auto bg-info p-1 text-center border-0 bg-opacity-25 rounded-6 mt-4"
+              >
+                You selected <samp id="selected">4</samp> out of 5
+              </div>
+              <h1 class="text-white text-center mt-4">Thank yor!</h1>
+              <p class="text-white-50 text-center fs-6 mt-4">
+                We appreciate you taking the time to give a rating. If you ever
+                need more support, don’t hesitate to get in touch!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
